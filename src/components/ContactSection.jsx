@@ -41,7 +41,7 @@ export const ContactSection = () => {
                 <div className="">
                   <h4 className="font-medium"> Email </h4>
                   <a
-                    href="mailto:sajadhardani@gmail.com"
+                    href="mailto:sajadhardani188@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     sajad.hardani188@gmail.com
@@ -69,10 +69,10 @@ export const ContactSection = () => {
                 <div className="">
                   <h4 className="font-medium"> Location </h4>
                   <a
-                    href="mailto:sajadhardani@gmail.com"
+                    href="mailto:sajadhardani188@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    iran ahwaz
+                    Iran 
                   </a>
                 </div>
               </div>
@@ -132,7 +132,7 @@ export const ContactSection = () => {
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus-outline-hidden focus:ring-2
                                        focus:ring-primary "
-                  placeholder="sajad.hardani@gmail.com"
+                  placeholder="sajad.hardani188@gmail.com"
                 />
               </div>
               <div>

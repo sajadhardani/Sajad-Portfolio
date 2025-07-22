@@ -18,14 +18,10 @@ export const AboutSection = () => {
                 </h3>
 
                 <p className="text-muted-foreground">
-                    with over 5 year of experince and i know how to develop site 
-                    with react next js and the librarys so if u want hire me 
-                    send me massaje in down blow
+                    "Passionate Junior Developer with hands-on experience in web development, problem-solving, and continuous learning. Eager to grow in a dynamic tech environment and contribute to impactful projects." 
                 </p>
                  <p className="text-muted-foreground">
-                    with over 5 year of experince and i know how to develop site 
-                    with react next js and the librarys so if u want hire me 
-                    send me massaje in down blow
+                    with few year of experience i love having team work and get the project done as a team
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">

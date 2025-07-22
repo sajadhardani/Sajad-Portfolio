@@ -5,25 +5,26 @@ import { cn } from "../lib/utills";
 
 const Skills = [
     //front end
-    {name: "HTML/CSS", level: 95, category:"frontend"}, 
-    {name: "HTML/CSS", level: 95, category:"frontend"}, 
-    {name: "HTML/CSS", level: 95, category:"frontend"}, 
-    {name: "HTML/CSS", level: 95, category:"frontend"}, 
-    {name: "HTML/CSS", level: 95, category:"frontend"}, 
-    {name: "HTML/CSS", level: 95, category:"frontend"}, 
+    {name: "React.js", level: 95, category:"frontend"}, 
+    {name: "JavaScript", level: 95, category:"frontend"}, 
+    {name: "Next.js", level: 95, category:"frontend"}, 
+    {name: "TypeScript", level: 95, category:"frontend"}, 
+   
 
 // backend
     {name: "node.js", level: 95, category:"backend"}, 
-    {name: "HTML/CSS", level: 95, category:"frontend"}, 
-    {name: "HTML/CSS", level: 40, category:"frontend"}, 
-    {name: "HTML/CSS", level: 95, category:"frontend"}, 
-    {name: "HTML/CSS", level: 95, category:"frontend"}, 
+    {name: "Python", level: 95, category:"backend"}, 
+    // {name: "HTML/CSS", level: 40, category:"frontend"}, 
+    // {name: "HTML/CSS", level: 95, category:"frontend"}, 
+    // {name: "HTML/CSS", level: 95, category:"frontend"}, 
 
-// toold
-    {name: "HTML/CSS", level: 95, category:"frontend"}, 
-    {name: "HTML/CSS", level: 95, category:"frontend"}, 
-    {name: "HTML/CSS", level: 95, category:"frontend"}, 
-    {name: "HTML/CSS", level: 95, category:"frontend"}, 
+// tools
+    {name: "Git/Github", level: 95, category:"tools"}, 
+    {name: "Tailwind CSS", level: 95, category:"tools"}, 
+    {name: "Bootstrap", level: 95, category:"tools"}, 
+    {name: "React Query	", level: 95, category:"tools"}, 
+    {name: "React Hook Form	", level: 95, category:"tools"}, 
+    {name: "Redux", level: 95, category:"tools"}, 
 
 ];
 
