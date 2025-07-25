@@ -8,7 +8,7 @@ const Skills = [
     {name: "React.js", level: 95, category:"frontend"}, 
     {name: "JavaScript", level: 95, category:"frontend"}, 
     {name: "Next.js", level: 95, category:"frontend"}, 
-    {name: "TypeScript", level: 95, category:"frontend"}, 
+    {name: "TypeScript", level: 80, category:"frontend"}, 
    
 
 // backend
@@ -24,7 +24,7 @@ const Skills = [
     {name: "Bootstrap", level: 95, category:"tools"}, 
     {name: "React Query	", level: 95, category:"tools"}, 
     {name: "React Hook Form	", level: 95, category:"tools"}, 
-    {name: "Redux", level: 95, category:"tools"}, 
+    {name: "Redux", level: 70, category:"tools"}, 
 
 ];
 

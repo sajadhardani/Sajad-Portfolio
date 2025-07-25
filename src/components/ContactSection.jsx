@@ -149,7 +149,7 @@ export const ContactSection = () => {
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus-outline-hidden focus:ring-2 resize-none
                                        focus:ring-primary "
-                  placeholder="hello i like to talk about"
+                  placeholder="hello what you like to talk about..."
                 />
               </div>
               <button

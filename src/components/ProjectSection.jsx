@@ -13,8 +13,8 @@ const projects = [
     description: "that show my skills of crating",
     image: "/projects/2.png",
     tags: ["React", "tailwind", "supabase"],
-    demourl: "#",
-    githubUrl: "#",
+    demourl: "https://github.com/sajadhardani/personal-brand-site",
+    githubUrl: "https://github.com/sajadhardani/personal-brand-site",
   },
   {
     id: 2,
@@ -22,8 +22,8 @@ const projects = [
     description: "shop site example",
     image: "/projects/3.png",
     tags: ["React", "tailwind", "supabase"],
-    demourl: "#",
-    githubUrl: "#",
+    demourl: "https://github.com/sajadhardani/personal-brand-site",
+    githubUrl: "https://github.com/sajadhardani/personal-brand-site",
   },
   {
     id: 3,
@@ -31,8 +31,8 @@ const projects = [
     description: "full site shop",
     image: "/projects/5.png",
     tags: ["React", "tailwind", "supabase"],
-    demourl: "#",
-    githubUrl: "#",
+    demourl: "https://github.com/sajadhardani/E-commerce",
+    githubUrl: "https://github.com/sajadhardani/E-commerce",
   },
 ];
 
