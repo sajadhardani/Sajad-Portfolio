@@ -1,6 +1,10 @@
 import { ArrowDown } from "lucide-react"
+import { useTranslation } from "react-i18next";
+ 
 
 export const HeroSection = () => {
+
+    const [t, i18n] = useTranslation("global");
     return (
         <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center px-4">
 
@@ -8,7 +12,7 @@ export const HeroSection = () => {
 
     <div className="space-y-6">
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            <span className="opacity-0 animate-fade-in">Hi, im </span>
+            <span className="opacity-0 animate-fade-in">{t("home.one")} </span>
             <span className="text-primary opacity-0 animate-fade-in-delay-1"> Sajad</span>
             <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2" >Hardani</span>
         </h1>

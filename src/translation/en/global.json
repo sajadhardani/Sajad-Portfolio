@@ -1,0 +1,17 @@
+{
+    "nav":{
+        "Contacts": "Contacts",
+        "Projects": "Projects",
+        "Skills": "Skills",
+        "About": "About",
+        "Home": "Home"
+    },
+    
+        "home":{
+            "one":"هاهاهها",
+            "two": "",
+            "b":""
+            
+        }
+    
+}
