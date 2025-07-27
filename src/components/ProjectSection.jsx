@@ -38,7 +38,7 @@ const projects = [
 ];
 
 export const ProjectSection = () => {
-    const [t, i18n] = useTranslation("global");
+    const [t, ] = useTranslation("global");
   
   return (
     <section dir="ltr" id="projects" className="py-21 px-4 relative">
@@ -104,10 +104,10 @@ export const ProjectSection = () => {
         <div className="text-center mt-12">
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
-            href=""
+            href="https://github.com/sajadhardani"
             target="_blank"
           >
-            Check My Github <ArrowRight size={16} />
+            {t("p.11")} <ArrowRight size={16} />
           </a>
         </div>
       </div>

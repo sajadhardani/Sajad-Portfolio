@@ -17,7 +17,7 @@ import { useTranslation } from "react-i18next";
 
 
 export const ContactSection = () => {
-      const [t, i18n] = useTranslation("global");
+      const [t, ] = useTranslation("global");
 
     const phoneNumber = "989165142066";
   const message = "Hello! I'm interested in your services.";
@@ -150,7 +150,7 @@ export const ContactSection = () => {
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus-outline-hidden focus:ring-2
                                        focus:ring-primary "
-                  placeholder="Sajad..."
+                  placeholder={t("e.22")} dir=""
                 />
               </div>
               <div>
@@ -185,7 +185,7 @@ export const ContactSection = () => {
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus-outline-hidden focus:ring-2 resize-none
                                        focus:ring-primary "
-                  placeholder="hello what you like to talk about..."
+                  placeholder= {t("e.44")}
                 />
               </div>
               <button

@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 export const AboutSection = () => {
 
-    const [t, i18n] = useTranslation ("global");
+    const [t, ] = useTranslation ("global");
     return (  <section id="about" className="py-24 px-4 relative">
         
         <div className="container mx-auto max-w-5xl">

@@ -1,5 +1,5 @@
 import { ArrowDown } from "lucide-react";
-import { useState } from "react";
+// import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useLanguage } from "../components/LanguageProvider";
 
@@ -7,7 +7,7 @@ export const HeroSection = () => {
   const { dir } = useLanguage();
   // direction
 
-  const [t, i18n] = useTranslation("global");
+  const [t, ] = useTranslation("global");
   return (
     <section
       id="hero"

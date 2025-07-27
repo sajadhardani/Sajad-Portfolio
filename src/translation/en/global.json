@@ -12,6 +12,14 @@
             "two": "",
             "b":""
             
-        }
+        },
+        "skill": {
+  "1": "Skills",
+  "11": "My",
+  "all": "All",
+  "frontend": "Frontend",
+  "backend": "Backend",
+  "tools": "Tools"
+}
     
 }
