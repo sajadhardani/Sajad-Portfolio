@@ -11,28 +11,30 @@ import {
 } from "lucide-react";
 
 import { cn } from "../lib/utills";
+import { useTranslation } from "react-i18next";
 
 
 
 
 export const ContactSection = () => {
+      const [t, i18n] = useTranslation("global");
 
     const phoneNumber = "989165142066";
   const message = "Hello! I'm interested in your services.";
   const link = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
-    <section id="contact" className="py-24 px-4 relative bg-secondary/30 ">
+    <section dir="ltr"
+     id="contact" className="py-24 px-4 relative bg-secondary/30 ">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          Get In
-          <span className="text-primary">Touch</span>
+          {t("d.11")}
+          <span className="text-primary">{t("d.1")}</span>
     
 
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          here i explain about how to get in touch with me for making new
-          projects opportunities.
+          {t("d.2")}
         </p>
 
         {/* contact */}
@@ -41,7 +43,7 @@ export const ContactSection = () => {
           <div className="space-y-8">
             <h3 className="text-2xl font-semibold mb-6">
               {" "}
-              Contact Information
+              {t("d.3")}
             </h3>
 
             <div className="space-y-6 justify-center ">
@@ -50,7 +52,7 @@ export const ContactSection = () => {
                   <Mail className="h-6 w-6 text-primary" />
                 </div>
                 <div className="">
-                  <h4 className="font-medium"> Email </h4>
+                  <h4 className="font-medium"> {t("d.3")} </h4>
                   <a
                     href="mailto:sajad.hardani188@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
@@ -64,7 +66,7 @@ export const ContactSection = () => {
                   <Phone className="h-6 w-6 text-primary" />
                 </div>
                 <div className="">
-                  <h4 className="font-medium"> Phone </h4>
+                  <h4 className="font-medium"> {t("d.4")} </h4>
                   <a
                     href="tel:+9809165142066"
                     className="text-muted-foreground hover:text-primary transition-colors"
@@ -78,7 +80,7 @@ export const ContactSection = () => {
                   <MapPin className="h-6 w-6 text-primary" />
                 </div>
                 <div className="">
-                  <h4 className="font-medium"> Location </h4>
+                  <h4 className="font-medium"> {t("d.5")} </h4>
                   <a
                     href="mailto:sajadhardani188@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
@@ -93,7 +95,7 @@ export const ContactSection = () => {
             
 
             <div className="pt-8">
-              <h4 className="font-medium mb-4"> Connect With Me</h4>
+              <h4 className="font-medium mb-4"> {t("d.6")}</h4>
               <div className="flex space-x-4 justify-center">
                 <a href="#" target="_blank">
                   <Linkedin />
@@ -110,7 +112,7 @@ export const ContactSection = () => {
                 
               </div>
               <div>  
- <h4 className="font-medium mt-5 mb-3"> Contact me on WhatsApp</h4>
+ <h4 className="font-medium mt-5 mb-3"> {t("d.7")}</h4>
                {/* watsapp button */}
           <a href={link} target="_blank" rel="noopener noreferrer " className="px-8 justify-center items-center flex  " >
                <button
@@ -121,7 +123,7 @@ export const ContactSection = () => {
                 )}
               > 
               {/* <MessageSquareText className=""/> */}
-                Chat on WhatsApp
+                {t("d.8")}
                 <Send size={18} />
               </button>
               </a>
@@ -132,7 +134,7 @@ export const ContactSection = () => {
           </div>
 
           <div className="bg-card p-8 rounded-lg shadow-xs">
-            <h3 className="text-2xl font-semibold mb-6"> Send Message</h3>
+            <h3 className="text-2xl font-semibold mb-6"> {t("e.1")}</h3>
             <form className="space-y-6">
               <div>
                 <label
@@ -140,7 +142,7 @@ export const ContactSection = () => {
                   className="block text-sm font-medium mb-2"
                 >
                   {" "}
-                  Your Name{" "}
+                 {t("e.2")}{" "}
                 </label>
                 <input
                   type="text"
@@ -157,7 +159,7 @@ export const ContactSection = () => {
                   className="block text-sm font-medium mb-2"
                 >
                   {" "}
-                  Your Email{" "}
+                {t("e.3")}{" "}
                 </label>
                 <input
                   type="email"
@@ -175,7 +177,7 @@ export const ContactSection = () => {
                   className="block text-sm font-medium mb-2"
                 >
                   {" "}
-                  Your Message{" "}
+                  {t("e.4")}{" "}
                 </label>
                 <textarea
                   id="message"
@@ -192,7 +194,7 @@ export const ContactSection = () => {
                   "cosmic-button w-full flex items-center justify-center gap-2"
                 )}
               >
-                Submit
+                 {t("e.5")}
                 <Send size={18} />
               </button>
               

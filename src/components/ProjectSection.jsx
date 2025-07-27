@@ -5,6 +5,7 @@ import {
   Github,
   Tag,
 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const projects = [
   {
@@ -37,14 +38,16 @@ const projects = [
 ];
 
 export const ProjectSection = () => {
+    const [t, i18n] = useTranslation("global");
+  
   return (
-    <section id="projects" className="py-21 px-4 relative">
+    <section dir="ltr" id="projects" className="py-21 px-4 relative">
       <div className="container mx-auto max-w-5x1">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center ">
-          Feature <span className="text-primary"> Projects</span>
+          {t("")} <span className="text-primary"> {t("p.1")} </span>
         </h2>
         <p className=" text-center text-muted-foreground mb-12 max-w-2x1 mx-auto">
-          here projects i done.
+          {t("p.2")}
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

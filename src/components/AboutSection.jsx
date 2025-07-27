@@ -1,14 +1,21 @@
 import { Briefcase, Code, User } from "lucide-react"
+import { useTranslation } from "react-i18next";
 
 
 
 export const AboutSection = () => {
+
+    const [t, i18n] = useTranslation ("global");
     return (  <section id="about" className="py-24 px-4 relative">
         
         <div className="container mx-auto max-w-5xl">
         
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-        About <span className="text-primary">Me</span>
+
+        {t("about.1")}
+         <span className="text-primary">
+            {t("about.11")}
+            </span>
         </h2>
 
 
@@ -16,18 +23,20 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6" > 
                 <h3 className="text-2xl font-semibold">
-                Passionate Web Developer & Tech Creator
+                {t("about.2")}
                 </h3>
 
                 <p className="text-muted-foreground">
-                    "Passionate Junior Developer with hands-on experience in web development, problem-solving, and continuous learning. Eager to grow in a dynamic tech environment and contribute to impactful projects." 
+                   {t("about.3")}
                 </p>
                  <p className="text-muted-foreground">
-                    with few year of experience i love having team work and get the project done as a team
+                    {t("about.4")}
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-                    <a href="#contract" className="cosmic-button"> Get in Touch </a>
+                    <a href="#contact" className="cosmic-button">
+                         {t("about.5")}
+                         </a>
                 </div>
 
                  </div>
@@ -40,9 +49,9 @@ export const AboutSection = () => {
                     <Code className="h-6 text-primary"/>
                     </div>
                     <div className="text-left">
-                        <h4 className="font-semibold text-lg"> Web Develoment</h4>
+                        <h4 className="font-semibold text-lg">  {t("about.6")}</h4>
                         <p className="text-muted-foreground">
-                            and the librarys so if u want hire me
+                             {t("about.66")}
                         </p>
                     </div>
                 </div>
@@ -54,9 +63,9 @@ export const AboutSection = () => {
                     
                     </div>
                      <div className="text-left">
-                        <h4 className="font-semibold text-lg"> Web Develoment</h4>
+                        <h4 className="font-semibold text-lg">  {t("about.7")}</h4>
                         <p className="text-muted-foreground">
-                            and the librarys so if u want hire me
+                            {t("about.77")}
                         </p>
                     </div>
                 </div>
@@ -67,9 +76,9 @@ export const AboutSection = () => {
                     <Briefcase className="h-6 text-primary"/>
                     </div>
                      <div className="text-left">
-                        <h4 className="font-semibold text-lg"> Web Develoment</h4>
+                        <h4 className="font-semibold text-lg">  {t("about.8")}</h4>
                         <p className="text-muted-foreground">
-                            and the librarys so if u want hire me
+                             {t("about.88")}
                         </p>
                     </div>
                 </div>

@@ -4,7 +4,7 @@ import i18next from "i18next";
 const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState("fa");
   const dir = language === "fa" ? "rtl" : "ltr";
 
   useEffect(() => {
