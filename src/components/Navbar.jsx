@@ -2,8 +2,10 @@ import { Menu, X } from "lucide-react";
 import { cn } from "../lib/utills";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useLanguage} from "./LanguageProvider";
 // import { changeLanguage } from "i18next";
 // {t("header.home")}
+
 
 const navItems = [
   { key: "Home", href: "#hero" },
@@ -14,12 +16,31 @@ const navItems = [
 ];
 
 export const Navbar = () => {
-  // translation (tarjome)
-  const [t, i18n] = useTranslation("global");
+    
 
-  const handleChangeLanguage = (b) => {
-    i18n.changeLanguage(b)
-  };
+const { language, toggleLanguage } = useLanguage();
+
+//  const { i18n } = useTranslation();
+//     useEffect(() => {
+//   if (!i18n.language || i18n.language !== "fa" && i18n.language !== "en") {
+//     i18n.changeLanguage("en");
+//   }
+// }, []);
+
+  //  const toggleLanguage = () => {
+  //   const newLang = i18n.language === "fa" ? "en" : "fa";
+  //   i18n.changeLanguage(newLang);
+  // };
+
+
+    
+  // translation (tarjome)
+  const [t, i18nn] = useTranslation("global");
+
+  
+//   const handleChangeLanguage = (b) => {
+//     i18n.changeLanguage(b)
+//   };
 // set is scrolled
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,10 +53,14 @@ export const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
+    
     <nav
+    dir="ltr"
+    //  dir="ltr"
       className={cn(
-        "fixed w-full z-40 transition-all duration-300",
+        "fixed w-full z-40 transition-all duration-300 ",
         isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
       )}
     >
@@ -53,12 +78,12 @@ export const Navbar = () => {
         {/* change lang buttom */}
         
 <div className="mr-120"> 
-       <button 
-  onClick={() => handleChangeLanguage(i18n.language === "fa" ? "en" : "fa")}
-  className="hover:bg-red-600 px-4 py-2 rounded text-white bg-primary "
->
-  {i18n.language === "fa" ? "EN" : "FA"}
-</button>
+      <button
+      onClick={toggleLanguage}
+      className="hover:bg-red-600 px-4 py-2 rounded text-white bg-primary"
+    >
+      {language === "fa" ? "EN" : "FA"}
+    </button>
 </div>
         {/* desktop nav*/}
 

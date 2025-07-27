@@ -1,12 +1,20 @@
 import { ArrowDown } from "lucide-react"
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
- 
+ import { useLanguage } from "../components/LanguageProvider"; 
+
 
 export const HeroSection = () => {
+ const { dir } = useLanguage();
+// direction
+ 
+ 
 
     const [t, i18n] = useTranslation("global");
     return (
-        <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center px-4">
+        <section id="hero" dir={dir} className="relative min-h-screen flex flex-col items-center justify-center px-4"
+           
+        >
 
 <div className="container max-w-4xl mx-auto text-center z-10">
 
