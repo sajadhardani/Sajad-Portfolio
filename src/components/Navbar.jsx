@@ -47,7 +47,7 @@ const { language, toggleLanguage } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.screenY > 10);
+      setIsScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -72,19 +72,21 @@ const { language, toggleLanguage } = useLanguage();
           <span className="relative z-10">
             <span className="text-glow text-foreground">Sajad </span>portfolio
           </span>
-          
-        </a>
-
-        {/* change lang buttom */}
+              {/* change lang buttom */}
         
-<div className="mr-120"> 
-      <button
+{!isScrolled && (
+  <div className="px-10">
+    <button
       onClick={toggleLanguage}
-      className="hover:bg-red-600 px-4 py-2 rounded text-white bg-primary"
+      className="w-12 h-10 text-sm font-semibold hover:bg-red-600 px-4 py-2 rounded text-white bg-primary text-center"
     >
       {language === "fa" ? "EN" : "FA"}
     </button>
-</div>
+  </div>
+)}
+        </a>
+
+    
         {/* desktop nav*/}
 
         <div className="hidden md:flex space-x-8">
