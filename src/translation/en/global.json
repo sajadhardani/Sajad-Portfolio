@@ -6,13 +6,77 @@
         "About": "About",
         "Home": "Home"
     },
-    
-        "home":{
-            "one":"Hi' im",
-            "two": "",
-            "b":""
-            
-        },
+
+  "home": {
+    "one": " Hi, im ",
+    "two": " Sajad",
+    "three": "",
+    "p": "  im full-stack developer i love creating beautiful website and work with team i also trying improve myself everyday so i can be a better programmer",
+    "b": "View My Work"
+  },
+
+  "about": {
+    "1": "About",
+    "11": " Me",
+    "2": "A frontend developer who builds cool things with code, creativity, and a good cup of coffee",
+    "3": "Passionate Junior Developer with hands-on experience in web development, problem-solving, and continuous learning. Eager to grow in a dynamic tech environment and contribute to impactful projects.",
+    "4": "with few year of experience i love having team work and get the project done as a team ",
+    "5": "Get in Touch",
+    "55": "ارتباط با من",
+    "6": "Web Develoment",
+    "66": "Building responsive websites and modern web applications using up-to-date frameworks and technologies.",
+
+    "7": "UI/UX Design ",
+    "77": "Experienced in designing responsive user interfaces with a strong focus on user experience and usability.",
+
+    "8": "Project Management",
+    "88": "Leading projects from idea to delivery with a focus on teamwork, transparency, and on-time execution."
+  },
+  "skill": {
+    "1": " مهارت های من",
+    "11": "",
+
+    "2": "همه ",
+    "3": " فرانت اند",
+    "4": " بک اند",
+    "5": " ابزارها",
+    "6": " "
+  },
+  "p": {
+    "1": " Projects",
+    "11": "Check my Github  ",
+
+    "2": "Projects that i have done. ",
+    "3": " سایت فروشگاهی ",
+    "4": " سایت خدماتی و فروشگاهی لپ تاب ",
+    "5": " سایت اجاره املاکی و اجاره ویلا",
+    "6": " "
+  },
+  "d": {
+    "1": "Get InTouch",
+    "11": "",
+    "2": "",
+    "3": " Email",
+    "4": " Phone Number ",
+    "5": " Location",
+    "6": "Social Media ",
+    "7": "Contact me on WhatsApp",
+    "8": "Send Message"
+  },
+  "e": {
+    "1": " Send Message",
+    "11": "",
+    "2": "your name",
+    "22": "my name...",
+
+    "3": " ایمیل شما",
+    "4": " پیام شما",
+    "44":"what u like talk about... ",
+    "5": " Submit",
+    "6": "شبکه های اجتماعی ",
+    "7": "ارتباط با من در واتساپ",
+    "8": "ارسال پیام در واتساپ"
+  },
         "skill": {
   "1": "Skills",
   "11": "My",
@@ -20,6 +84,27 @@
   "frontend": "Frontend",
   "backend": "Backend",
   "tools": "Tools"
+},
+"projects": {
+  "heading": "My",
+  "highlight": "Projects",
+  "desc": "Here are some of my featured projects",
+  "demoButton": "See more projects",
+  "items": {
+    "1": {
+      "title": "Real Estate Website",
+      "desc": "You can select a house and buy it"
+    },
+    "2": {
+      "title": "Shopping Website",
+      "desc": "Shop site example"
+    },
+    "3": {
+      "title": "E-commerce",
+      "desc": "Full site shop"
+    }
+  }
 }
+
     
 }

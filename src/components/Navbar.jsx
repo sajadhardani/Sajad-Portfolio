@@ -35,7 +35,7 @@ const { language, toggleLanguage } = useLanguage();
 
     
   // translation (tarjome)
-  const [t, i18nn] = useTranslation("global");
+  const [t, ] = useTranslation("global");
 
   
 //   const handleChangeLanguage = (b) => {

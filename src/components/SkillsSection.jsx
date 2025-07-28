@@ -45,7 +45,7 @@ export const SkillsSection = () => {
     <section id="skills" className="py-24 px-4 relative bg-secendary/30  ">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center ">
-          {t("skill.1")} <span className="text-primary"> {t("skill.11")} </span>
+          {t("skill.11")} <span className="text-primary"> {t("skill.1")} </span>
         </h2>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12 ">
