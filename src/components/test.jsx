@@ -1,0 +1,130 @@
+import { Menu, X } from "lucide-react";
+import { cn } from "../lib/utills";
+import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import { useLanguage } from "./LanguageProvider";
+// import { changeLanguage } from "i18next";
+// {t("header.home")}
+
+const navItems = [
+  { key: "Home", href: "#hero" },
+  { key: "About", href: "#about" },
+  { key: "Skills", href: "#skills" },
+  { key: "Projects", href: "#projects" },
+  { key: "Contacts", href: "#contact" },
+];
+
+export const Navbar = () => {
+  const { language, toggleLanguage } = useLanguage();
+
+  //  const { i18n } = useTranslation();
+  //     useEffect(() => {
+  //   if (!i18n.language || i18n.language !== "fa" && i18n.language !== "en") {
+  //     i18n.changeLanguage("en");
+  //   }
+  // }, []);
+
+  //  const toggleLanguage = () => {
+  //   const newLang = i18n.language === "fa" ? "en" : "fa";
+  //   i18n.changeLanguage(newLang);
+  // };
+
+  // translation (tarjome)
+  const [t] = useTranslation("global");
+
+  //   const handleChangeLanguage = (b) => {
+  //     i18n.changeLanguage(b)
+  //   };
+  // set is scrolled
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 15);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <nav
+      dir="ltr"
+      className={cn(
+        "fixed w-full z-40 transition-all duration-300 ",
+        isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
+      )}
+    >
+    <div className="container flex items-center justify-between">
+  {/* لوگو */}
+  <a
+    className="text-xl font-bold text-primary flex items-center"
+    href="#hero"
+  >
+    <span className="relative z-10">
+      <span className="text-glow text-foreground">Sajad </span>Portfolio
+    </span>
+  </a>
+
+  {/* زبان + دکمه منو در موبایل */}
+  <div className="flex items-center gap-4">
+    {/* دکمه تغییر زبان */}
+    <button
+      onClick={toggleLanguage}
+      className="w-12 h-10 text-sm font-semibold hover:bg-red-600 px-4 py-2 rounded text-white bg-primary text-center"
+    >
+      {language === "fa" ? "EN" : "FA"}
+    </button>
+
+    {/* دکمه منو برای موبایل */}
+    <button
+      onClick={() => setIsMenuOpen((prev) => !prev)}
+      className="md:hidden p-2 text-foreground z-50"
+      aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
+    >
+      {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+    </button>
+  </div>
+
+  {/* منوی دسکتاپ */}
+  <div className="hidden md:flex space-x-8">
+    {navItems.map((item, key) => (
+      <a
+        key={key}
+        href={item.href}
+        className="text-foreground/80 hover:text-primary transition-colors duration-300"
+      >
+        {t(`nav.${item.key}`)}
+      </a>
+    ))}
+  </div>
+
+  {/* منوی موبایل */}
+  <div
+    className={cn(
+      "fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center",
+      "transition-all duration-300 md:hidden",
+      isMenuOpen
+        ? "opacity-100 pointer-events-auto"
+        : "opacity-0 pointer-events-none"
+    )}
+  >
+    <div className="flex flex-col space-y-8 text-xl">
+      {navItems.map((item, key) => (
+        <a
+          key={key}
+          href={item.href}
+          className="text-foreground/80 hover:text-primary transition-colors duration-300"
+        >
+          {t(`nav.${item.key}`)}
+        </a>
+      ))}
+    </div>
+  </div>
+</div>
+
+
+    </nav>
+  );
+};

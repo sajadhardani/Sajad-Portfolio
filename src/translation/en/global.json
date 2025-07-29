@@ -93,15 +93,17 @@
   "items": {
     "1": {
       "title": "Real Estate Website",
-      "desc": "You can select a house and buy it"
+      "desc": "A platform to search, select, and purchase homes easily, featuring a user-friendly interface and advanced search options."
     },
     "2": {
-      "title": "Shopping Website",
-      "desc": "Shop site example"
+      "title": "Online Store",
+      "desc": "A sample online store specialized in laptops and computer services, featuring responsive design and order management capabilities."
     },
     "3": {
-      "title": "E-commerce",
-      "desc": "Full site shop"
+      "title": "E-commerce Website",
+      "desc": "A fully functional e-commerce website with features like shopping cart, product management,, and responsive design for a smooth user experience."
+
+
     }
   }
 }

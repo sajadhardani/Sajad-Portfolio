@@ -30,8 +30,8 @@ export const HeroSection = () => {
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
              {t("home.p")}
           </p>
-
-          <div className="pt-4 opacity-0 animate-fade-in-delay-4">
+            {/* see my work buttom*/}
+          <div className="pt-4 opacity-0 animate-fade-in-delay-4 ">
             <a href="#projects" className="cosmic-button">
               {t("home.b")}
             </a>
