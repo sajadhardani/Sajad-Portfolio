@@ -1,6 +1,6 @@
 {
-  "app": "sajad-portfolio",
-  "port": 3000,
+  "app": "sajad-profile",
+  "port": 80,
   "build": {
     "location": "iran"
   },
