@@ -14,7 +14,7 @@ const projects = [
     description: "you can select a house and buy it",
     image: "/projects/6.png",
     tags: ["React", "tailwind"],
-    demourl: "https://github.com/sajadhardani/real-estate-website",
+    demourl: "https://hardani-shop.liara.run/",
     githubUrl: "https://github.com/sajadhardani/real-estate-website",
   },
   {
@@ -23,7 +23,7 @@ const projects = [
     description: "shop site example",
     image: "/projects/3.png",
     tags: ["React", "tailwind"],
-    demourl: "https://github.com/sajadhardani/personal-brand-site",
+    demourl: "https://hardani-store.liara.run/",
     githubUrl: "https://github.com/sajadhardani/TechShopSupport",
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     description: "full site shop",
     image: "/projects/5.png",
     tags: ["React", "tailwind"],
-    demourl: "https://github.com/sajadhardani/E-commerce",
+    demourl: "https://hardani-onlinestore.liara.run/",
     githubUrl: "https://github.com/sajadhardani/E-commerce",
   },
 ];
@@ -89,7 +89,7 @@ export const ProjectSection = () => {
                       <ExternalLink size={20} />{" "}
                     </a>
                     <a
-                      href={project.demourl}
+                      href={project.githubUrl}
                       target="_blank"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
