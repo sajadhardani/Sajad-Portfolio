@@ -13,7 +13,7 @@ const projects = [
     title: "real state website",
     description: "you can select a house and buy it",
     image: "/projects/6.png",
-    tags: ["React", "tailwind", ],
+    tags: ["React", "tailwind"],
     demourl: "https://github.com/sajadhardani/real-estate-website",
     githubUrl: "https://github.com/sajadhardani/real-estate-website",
   },
@@ -22,24 +22,24 @@ const projects = [
     title: "shoping website",
     description: "shop site example",
     image: "/projects/3.png",
-    tags: ["React", "tailwind", ],
+    tags: ["React", "tailwind"],
     demourl: "https://github.com/sajadhardani/personal-brand-site",
-    githubUrl: "https://github.com/sajadhardani/personal-brand-site",
+    githubUrl: "https://github.com/sajadhardani/TechShopSupport",
   },
   {
     id: 3,
     title: "E-commerce",
     description: "full site shop",
     image: "/projects/5.png",
-    tags: ["React", "tailwind", ],
+    tags: ["React", "tailwind"],
     demourl: "https://github.com/sajadhardani/E-commerce",
     githubUrl: "https://github.com/sajadhardani/E-commerce",
   },
 ];
 
 export const ProjectSection = () => {
-    const [t, ] = useTranslation("global");
-  
+  const [t] = useTranslation("global");
+
   return (
     <section dir="ltr" id="projects" className="py-21 px-4 relative">
       <div className="container mx-auto max-w-5x1">
@@ -77,7 +77,7 @@ export const ProjectSection = () => {
                   {t(`projects.items.${project.id}.title`)}{" "}
                 </h3>
                 <p className="text-muted-foreground text-sm mb-4 ">
-                   {t(`projects.items.${project.id}.desc`)}
+                  {t(`projects.items.${project.id}.desc`)}
                 </p>
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">

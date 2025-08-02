@@ -168,3 +168,24 @@
   padding: 0 ;
   text-align: center;
 } 
+
+/* @font-face {
+    font-family: vazir;
+    src: url('./assets/font/Tanha.eot');
+    src: url('./assets/font/Tanha.woff2') format('embedded-opentype'),
+         url('./assets/font/Tanha.woff') format('woff'),
+         url('./assets/font/Tanha.ttf') format('truetype');
+    font-weight: normal;
+} */
+
+@font-face {
+    font-family: vazir;
+    src: url('./assets/font/Tanha.eot');
+    src: url('./assets/font/Tanha.woff2') format('embedded-opentype'),
+         url('./assets/font/Tanha.woff') format('woff'),
+         url('./assets/font/IRANSans-Edit.ttf') format('truetype');
+    font-weight: normal;
+}
+body{
+   font-family: 'vazir';
+}
